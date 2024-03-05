@@ -26,9 +26,18 @@
 }
 
 body {
-    padding: 4rem;
     background-color: var(--Color-Gray-600);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    padding: 4rem;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .task-item {
@@ -39,15 +48,31 @@ body {
     border-radius: 8px;
 }
 
+.task-item.checked .task-item-description {
+    text-decoration: line-through;
+    color: var(--Color-Gray-300);
+}
+
 .task-item-checkbox {
     display: block;
     width: 40px;
+    cursor: pointer;
 
 }
 
 .task-item-description {
     color: var(--Color-Gray-100);
     font-size: var(--font-size-base);
+}
+
+.task-item-actions svg {
+    cursor: pointer;
+    color: var(--Color-Gray-300);
+}
+
+.task-item-actions svg:hover {
+    cursor: pointer;
+    color: var(--Color-Danger);
 }
 
 .input {
@@ -117,4 +142,22 @@ body {
     /*border: 2px solid var(--Color-PurpleDark);
     border-radius: 50%;
     background-color: var(--Color-PurpleDark);*/
+}
+
+.btn-primary {
+    display: flex;
+    padding: 16px;
+    background-color: var(--Color-BlueDark);
+    border: none;
+    color: var(--Color-Gray-100);
+    font-size: var(--font-size-base);
+    font-weight: bold;
+    border-radius: 8px;
+    gap: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: var(--Color-Blue);
 }
