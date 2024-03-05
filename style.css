@@ -28,6 +28,26 @@
 body {
     padding: 4rem;
     background-color: var(--Color-Gray-600);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.task-item {
+    display: flex;
+    gap: 12px;
+    padding: 16px;
+    background-color: var(--Color-Gray-500);
+    border-radius: 8px;
+}
+
+.task-item-checkbox {
+    display: block;
+    width: 40px;
+
+}
+
+.task-item-description {
+    color: var(--Color-Gray-100);
+    font-size: var(--font-size-base);
 }
 
 .input {
@@ -63,6 +83,7 @@ body {
     top: 0;
     left: 0;
     border: 2px solid var(--Color-Blue);
+    background-color: var(--Color-Gray-500);
     border-radius: 50%;
 }
 
